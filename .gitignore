@@ -14,6 +14,7 @@ composer.phar
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
+.idea/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
@@ -293,7 +294,7 @@ Temporary Items
 /composer.phar
 
 # Backup entities generated with doctrine:generate:entities command
-**/Entity/*~
+src/EntityBase/*~
 
 # Embedded web-server pid file
 /.web-server-pid
@@ -332,12 +333,13 @@ $RECYCLE.BIN/
 
 
 ###> symfony/framework-bundle ###
+/.env
 /.env.*
-!/env.dist
+!/.env.dist
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /var/
-/vendor/
+!/vendor/kstrwbry/*
 ###< symfony/framework-bundle ###
 
 ###> symfony/webpack-encore-bundle ###
@@ -346,3 +348,5 @@ $RECYCLE.BIN/
 npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-bundle ###
+
+ca.pem

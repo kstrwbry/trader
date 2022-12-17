@@ -1,0 +1,30 @@
+parameters:
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Kernel.php'
+
+    Binance\API: ~
+
+    binance.api.blank:
+        class: Binance\API
+        arguments:
+            - '%binance.api.api_key%'
+            - '%binance.api.api_secret%'
+
+    binance.api.login:
+        class: Binance\API
+        arguments:
+            - '%binance.api.api_key%'
+            - '%binance.api.api_secret%'
+
+    Binance\API $binanceApiBlank: '@binance.api.blank'
+    Binance\API $binanceApiLogin: '@binance.api.login'
