@@ -1651,7 +1651,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kstrwbry/binance-trader.git",
-                "reference": "1db3ff2d3c4a8ce9c15ddb2448d62cb4ffc2f9f3"
+                "reference": "8b01ba55737c7bcdc4e939ab8c4f1ee8041950d5"
             },
             "require": {
                 "doctrine/orm": "^2.14",
@@ -1670,7 +1670,7 @@
                 ]
             },
             "description": "basic components for automated binance trading",
-            "time": "2023-01-06T14:28:41+00:00"
+            "time": "2024-06-17T20:57:22+00:00"
         },
         {
             "name": "psr/cache",
@@ -7391,5 +7391,5 @@
         "ext-iconv": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.6.0"
 }
