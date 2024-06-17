@@ -6,7 +6,7 @@ doctrine:
         # either here or in the DATABASE_URL env var (see .env file)
         #server_version: '14'
         types:
-            signal: App\Type\SignalType
+            signal: Kstrwbry\BinanceTrader\Type\SignalType
     orm:
         auto_generate_proxy_classes: true
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
@@ -18,8 +18,8 @@ doctrine:
                 prefix: 'App\Entity'
                 alias: App
         resolve_target_entities:
-            App\Interface\KlineInterface: App\Entity\Kline
-            App\Interface\KlineRawInterface: App\Entity\KlineRaw
+            Kstrwbry\BinanceTrader\Interface\KlineInterface: App\Entity\Kline
+            Kstrwbry\BinanceTrader\Interface\KlineRawInterface: App\Entity\KlineRaw
 
 
 when@test:
